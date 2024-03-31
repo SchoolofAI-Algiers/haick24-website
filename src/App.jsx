@@ -1,10 +1,10 @@
-
+import Hero from "./components/hero";
 const App = () => {
   return (
-    <div>
-      <h1 className=" text-MintGreen font-IPM"></h1>
+    <div className="h-fit flex w-full min-h-screen">
+      <Hero />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
