@@ -14,6 +14,7 @@ import { CiLocationOn } from 'react-icons/ci';
 import { TbCalendarTime } from 'react-icons/tb';
 import { IRemainingTime } from '../../types';
 import { useEffect } from 'react';
+import { MdClose } from "react-icons/md";
 import './style.css';
 
 const Hero: React.FC = () => {
@@ -62,14 +63,15 @@ const Navbar: React.FC = () => {
       <button className="bg-oceanBlue sm:flex hidden px-4 py-2 font-bold rounded-full">
         Register
       </button>
-      <IoMdMenu
+     {!open &&  <IoMdMenu
         onClick={() => setOpen((prv) => !prv)}
-        className=" sm:hidden flex items-center justify-center w-8 h-8 cursor-pointer"
-      />
+        className="sm:hidden flex items-center justify-center w-8 h-8 cursor-pointer"
+      />}
       {open && (
-        <ul className="sm:hidden top-16 bg-midNightBlueColor py-4 rounded-l-lg fixed h-full z-20 right-0 flex flex-col items-center justify-center w-1/2 gap-4">
+        <ul className="sm:hidden bg-midNightBlueColor py-4 rounded-l-lg fixed top-0 h-full z-20 right-0 flex flex-col items-center justify-center w-1/2 gap-4 ease-in-out">
+          <MdClose size={20} className='absolute top-4 right-4' onClick={()=>setOpen(false)} />
           {navbarElement.map((element, index) => (
-            <li>
+            <li className="font-semibold text-xl font-IPM hover:text-skyBlueColor">
               <a href={`#${element}`} key={index}>
                 {element}
               </a>
