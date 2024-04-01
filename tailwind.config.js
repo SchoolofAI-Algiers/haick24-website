@@ -11,7 +11,7 @@ export default {
       midNightBlueColor:"#00b5e2",
       MintGreen:"#391f9b",
       white: '#ffffff',
-      gray:"#eeeeee"
+      gray:"#F8F3F325"
     },
     extend: {
       fontFamily:{
