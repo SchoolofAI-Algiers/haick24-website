@@ -1,8 +1,11 @@
+import Mentors from "./components/Mentors"
+import Polygon from "./components/Polygon"
 
 const App = () => {
   return (
     <div>
-      <h1 className=" text-MintGreen font-IPM"></h1>
+      <Mentors />
+
     </div>
   )
 }
