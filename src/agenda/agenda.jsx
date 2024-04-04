@@ -12,8 +12,8 @@ import shortdarkgreenline from './resources/shortdarkgreen.svg';
 
 const AgendaItem = ({ time, text }) => (
   <div className="flex mb-1">
-    <p className="font-WorkSans text-right mr-2 text-white">{time} :</p>
-    <p className="font-WorkSans font-light text-white">{text}</p>
+    <p className="mr-2 text-right text-white font-WorkSans">{time} :</p>
+    <p className="font-light text-white font-WorkSans">{text}</p>
   </div>
 );
 
@@ -34,11 +34,11 @@ const agendaItems = [
 
 const Agenda = () => {
     return (
-      <div className="bg-skyBlueColor min-h-screen flex flex-col items-center overflow-hidden pb-10 relative">
+      <div className="relative flex flex-col items-center min-h-screen pb-10 overflow-hidden bg-skyBlueColor">
 
-        <img src={topsphere} alt="" className='absolute top-0 left-72 w-auto h-auto' />
-        <img src={leftsphere} alt="" className='absolute bottom-40 left-0 w-auto h-auto' />
-        <img src={rightsphere} alt="" className='absolute right-0 top-40 w-auto h-auto' />
+        <img src={topsphere} alt="" className='absolute top-0 w-auto h-auto left-72' />
+        <img src={leftsphere} alt="" className='absolute left-0 w-auto h-auto bottom-40' />
+        <img src={rightsphere} alt="" className='absolute right-0 w-auto h-auto top-40' />
         <img src={shortgreenline} alt="" className='absolute left-0 top-40 h-[150px] md:h-auto md:w-auto' />
         <img src={greendarkline} alt="" className='absolute right-0 top-96 w-[150px] h-[150px] md:h-auto md:w-auto' />
         <img src={longgreenline} alt="" className='absolute right-0 top-40 w-[150px] h-[150px] md:h-auto md:w-auto' />
@@ -47,15 +47,15 @@ const Agenda = () => {
         <img src={leftlonggreenline} alt="" className='absolute left-0 bottom-1/2 w-[150px] h-[150px] md:h-auto md:w-auto' />
         <img src={shortdarkgreenline} alt="" className='absolute left-0 bottom-20 w-[150px] h-[150px] md:h-auto md:w-auto' />
 
-        <p className="font-IPM font-bold md:text-6xl text-4xl text-white mt-5">
+        <p className="mt-5 text-4xl font-bold text-white font-IPM md:text-6xl">
           Our Agenda
         </p>
 
         <div className="flex flex-row w-full ml-20 md:ml-56 ">
           <div className="bg-skyBlueColor mt-10 rounded-[7px] z-[1]">
             <div className='flex flex-col items-start bg-gray pt-5 pr-20 pb-5 pl-7 rounded-[7px] md:text-2xl md:w-[500px] md:pl-10 md:pt-10 md:pb-12'>
-              <h1 className="font-IPM font-semibold text-right mr-2 mb-2 md:mb-5 text-midNightBlueColor">DAY 1</h1>
-              <p className="font-WorkSans text-right mr-2 mb-2 md:mb-5 text-white">20/04/2024</p>
+              <h1 className="mb-2 mr-2 font-semibold text-right font-IPM md:mb-5 text-midNightBlueColor">DAY 1</h1>
+              <p className="mb-2 mr-2 text-right text-white font-WorkSans md:mb-5">20/04/2024</p>
               {agendaItems.map((item) => (
                 <AgendaItem key={item.time} time={item.time} text={item.text} />
               ))}
@@ -63,11 +63,11 @@ const Agenda = () => {
           </div>
         </div>
         
-        <div className="flex flex-row w-full justify-end mr-20 md:mr-80">
+        <div className="flex flex-row justify-end w-full mr-20 md:mr-80">
           <div className="bg-skyBlueColor mt-10 rounded-[7px] z-[1]">
             <div className='flex flex-col items-start bg-gray pt-5 pr-20 pb-5 pl-7 rounded-[7px] md:text-2xl md:w-[500px] md:pl-10 md:pt-10 md:pb-12'>
-              <h1 className="font-IPM font-semibold text-right mr-2 mb-2 md:mb-5 text-midNightBlueColor">DAY 1</h1>
-              <p className="font-WorkSans text-right mr-2 mb-2 md:mb-5 text-white">20/04/2024</p>
+              <h1 className="mb-2 mr-2 font-semibold text-right font-IPM md:mb-5 text-midNightBlueColor">DAY 1</h1>
+              <p className="mb-2 mr-2 text-right text-white font-WorkSans md:mb-5">20/04/2024</p>
               {agendaItems.map((item) => (
                 <AgendaItem key={item.time} time={item.time} text={item.text} />
               ))}
@@ -79,8 +79,8 @@ const Agenda = () => {
         <div className="flex flex-row w-full ml-20 md:ml-80">
           <div className="bg-skyBlueColor mt-10 rounded-[7px] z-[1]">
             <div className='flex flex-col items-start bg-gray pt-5 pr-20 pb-5 pl-7 rounded-[7px] md:text-2xl md:w-[500px] md:pl-10 md:pt-10 md:pb-12'>
-              <h1 className="font-IPM font-semibold text-right mr-2 mb-2 md:mb-5 text-midNightBlueColor">DAY 1</h1>
-              <p className="font-WorkSans text-right mr-2 mb-2 md:mb-5 text-white">20/04/2024</p>
+              <h1 className="mb-2 mr-2 font-semibold text-right font-IPM md:mb-5 text-midNightBlueColor">DAY 1</h1>
+              <p className="mb-2 mr-2 text-right text-white font-WorkSans md:mb-5">20/04/2024</p>
               {agendaItems.map((item) => (
                 <AgendaItem key={item.time} time={item.time} text={item.text} />
               ))}
