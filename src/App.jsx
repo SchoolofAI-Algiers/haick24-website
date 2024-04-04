@@ -1,8 +1,12 @@
+import Faq from "./faq/Faq.jsx";
+import PhotoSlider from "./sponsor/PhotoSlider.jsx";
 
 const App = () => {
   return (
     <div>
-      <h1 className=" text-MintGreen font-IPM"></h1>
+      <PhotoSlider/>
+      <Faq/>
+
     </div>
   )
 }
