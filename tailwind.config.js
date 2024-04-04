@@ -12,6 +12,7 @@ export default {
       MintGreen: "#391f9b",
       white: "#ffffff",
       gray: "#F8F3F325",
+      grayv: "#9CA3AF",
       oceanBlue: "#00B5E2",
     },
     extend: {

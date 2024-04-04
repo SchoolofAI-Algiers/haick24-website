@@ -1,17 +1,18 @@
-import Hero from "./components/hero/index.tsx";
-import Agenda from './agenda/agenda.jsx';
-import Mentors from "./components/mentors/Mentors.jsx";
+import Hero from './components/hero/index.tsx';
+import Agenda from './components/agenda/agenda.jsx';
+import Sponsors from './sponsor/PhotoSlider.jsx';
+import Faq from './faq/Faq.jsx';
+import Mentors from './components/mentors/Mentors.jsx';
 const App = () => {
-
-return(
+  return (
     <div>
-    <Hero />
-      <Agenda/>
+      <Hero />
+      <Agenda />
       <Mentors />
+      <Sponsors />
+      <Faq />
     </div>
-    
-  )
-}
-
+  );
+};
 
 export default App;

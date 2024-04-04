@@ -34,9 +34,9 @@ const agendaItems = [
 
 const Agenda = () => {
     return (
-      <div className="bg-skyBlueColor min-h-screen flex flex-col items-center overflow-hidden pb-10 relative">
+      <div className="bg-skyBlueColor min-h-screen flex flex-col items-center pb-10 relative">
 
-        <img src={topsphere} alt="" className='absolute top-0 left-72 w-auto h-auto' />
+        <div className='absolute h-64 w-64 rounded-full bg-midNightBlueColor blur-[160px] top-0 left-72' />
         <img src={leftsphere} alt="" className='absolute bottom-40 left-0 w-auto h-auto' />
         <img src={rightsphere} alt="" className='absolute right-0 top-40 w-auto h-auto' />
         <img src={shortgreenline} alt="" className='absolute left-0 top-40 h-[150px] md:h-auto md:w-auto' />
