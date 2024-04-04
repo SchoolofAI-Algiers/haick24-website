@@ -44,6 +44,13 @@ export default {
         },
         "100%": { transform: "rotate(360deg)" },
       },
+      fontFamily:{
+        IPM:"IBM Plex Mono, monospace",
+        WorkSans:"Work Sans, sans-serif"
+      },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      }
     },
   },
   plugins: [],

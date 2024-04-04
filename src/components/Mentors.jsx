@@ -1,22 +1,24 @@
 import React from "react";
-import curve from "../../assets/Curve.svg";
-import curve1 from "../../assets/Curve-1.svg";
-import curve2 from "../../assets/Curve-2.svg";
-import lights from "../../assets/lights.svg";
-import pytorch from "../../assets/pytorch.svg";
-import glow from "../../assets/glow.svg";
+import curve from "../assets/Curve.svg";
+import curve1 from "../assets/Curve-1.svg";
+import curve2 from "../assets/Curve-2.svg";
+import lights from "../assets/lights.svg";
+import pytorch from "../assets/pytorch.svg";
+import glow from "../assets/glow.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 // import "swiper/css/pagination";
-import "./style.css";
-import { mentorsData } from "../../data/mentorsData";
+import "./Mentors.css";
+import { mentorsData } from "../data/mentorsData";
 
 const Mentor = ({ name, desc, img }) => {
   return (
-    <div className="relative">
-      <div className="polygon w-full mt-20 flex flex-col gap-6 items-center justify-center py-32 px-10">
-        
+    <div className="relative bg-[url(./assets/polygon.svg)] bg-no-repeat h-screen w-full z-40 mt-20  mentor">
+      <div className="flex flex-col gap-y-2 absolute -top-8 ">
+        <div className="self-center size-1/2">
+          <img src={img} alt="" className="" />
+        </div>
         <h1 className="font-bold font-IPM text-4xl text-center text-white ">
           {name}
         </h1>
@@ -24,9 +26,6 @@ const Mentor = ({ name, desc, img }) => {
           {desc}
         </p>
       </div>
-      <div className="absolute w-40 h-40 top-0 left-[50%] -translate-x-[50%] -translate-y-[40%] size-1/2">
-          <img src={img} alt="" className="" />
-        </div>
     </div>
   );
 };
@@ -59,7 +58,7 @@ const Mentors = () => {
           clickable: true,
         }}
         modules={[Autoplay, ]}
-        className="flex pt-44 w-full swiper"
+        className="flex w-screen pr-10 md:pr-20 swiper"
       >
         {mentorsData.map((mentor, index) => {
           return (
@@ -88,7 +87,7 @@ const Mentors = () => {
           clickable: true,
         }}
         modules={[Autoplay, Pagination]}
-        className="flex w-full pt-24 swiper"
+        className="flex w-screen pr-10 md:pr-20 swiper"
       >
         {mentorsData.map((mentor, index) => {
           return (

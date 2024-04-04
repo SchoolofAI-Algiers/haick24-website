@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
       <Navbar />
       <Landing />
       
-      <div className="w-fit md:left-[10%] md:bottom-[5%] md:absolute flex flex-col items-start gap-2 z-10">
+      <div className="w-fit md:left-[10%] md:bottom-[5%] md:absolute flex flex-col items-start gap-2 z-20">
         <div className="flex items-center justify-center gap-4">
           <CiLocationOn className="text-oceanBlue w-6 h-6" />
           <span className="font-bold">ESI Algeria</span>
@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
         className="sm:hidden flex items-center justify-center w-8 h-8 cursor-pointer"
       />}
       {open && (
-        <ul className="sm:hidden bg-midNightBlueColor py-4 rounded-l-lg fixed top-0 h-full z-20 right-0 flex flex-col items-center justify-center w-1/2 gap-4 ease-in-out">
+        <ul className="sm:hidden bg-midNightBlueColor py-4 rounded-l-lg fixed top-0 h-full z-20 right-0 flex flex-col items-center justify-center w-1/2 gap-4 transition ease-in-out">
           <MdClose size={20} className='absolute top-4 right-4' onClick={()=>setOpen(false)} />
           {navbarElement.map((element, index) => (
             <li className="font-semibold text-xl font-IPM hover:text-skyBlueColor">
@@ -91,7 +91,7 @@ const Landing: React.FC = () => {
         is officially here !
       </h1>
       <button
-        className="regBtn bg-oceanBlue px-7 py-2 text-[#000] rounded-full font-semibold hover:justify-center transition-all overflow-hidden"
+        className="bg-oceanBlue px-7 py-2 text-[#000] rounded-full font-semibold hover:justify-center transition-all overflow-hidden"
       >
         {/*
        <span
