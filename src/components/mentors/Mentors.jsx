@@ -15,7 +15,7 @@ import { mentorsData } from "../../data/mentorsData";
 const Mentor = ({ name, desc, img }) => {
   return (
     <div className="relative">
-      <div className="polygon w-full mt-20 flex flex-col gap-6 items-center justify-center py-32 px-10">
+      <div className="polygon w-full mt-20 flex flex-col gap-6 items-center justify-center py-32 px-10 mentor">
         
         <h1 className="font-bold font-IPM text-4xl text-center text-white ">
           {name}

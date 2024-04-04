@@ -5,7 +5,7 @@ import Faq from './faq/Faq.jsx';
 import Mentors from './components/mentors/Mentors.jsx';
 const App = () => {
   return (
-    <div>
+    <div className='overflow-hidden'>
       <Hero />
       <Agenda />
       <Mentors />
