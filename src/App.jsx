@@ -1,9 +1,13 @@
-
+import Agenda from './agenda/agenda.jsx';
+import About from './about_us/About.jsx';
 const App = () => {
+
   return (
     <div>
-      <h1 className=" text-MintGreen font-IPM"></h1>
+      <About/>
+      <Agenda/>
     </div>
+    
   )
 }
 
