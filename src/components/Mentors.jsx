@@ -8,13 +8,13 @@ import glow from "../assets/glow.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/pagination";
+// import "swiper/css/pagination";
 import "./Mentors.css";
 import { mentorsData } from "../data/mentorsData";
 
 const Mentor = ({ name, desc, img }) => {
   return (
-    <div className="relative bg-[url(./assets/polygon.svg)] bg-no-repeat h-screen w-full z-40 mt-20 mentor">
+    <div className="relative bg-[url(./assets/polygon.svg)] bg-no-repeat h-screen w-full z-40 mt-20  mentor">
       <div className="flex flex-col gap-y-2 absolute -top-8 ">
         <div className="self-center size-1/2">
           <img src={img} alt="" className="" />
@@ -22,7 +22,7 @@ const Mentor = ({ name, desc, img }) => {
         <h1 className="font-bold font-IPM text-4xl text-center text-white ">
           {name}
         </h1>
-        <p className="font-medium font-IPM text-lg text-center text-white px-16">
+        <p className="font-medium font-IPM text-lg text-center text-white px-16 text-wrap">
           {desc}
         </p>
       </div>
@@ -33,13 +33,19 @@ const Mentor = ({ name, desc, img }) => {
 const Mentors = () => {
   return (
     <div
-      className="bg-skyBlueColor w-full px-10 py-10 gap-y-10 flex flex-col overflow-hidden relative"
+      className="bg-skyBlueColor w-full px-5 md:px-10 py-10 gap-y-10 flex flex-col overflow-hidden relative"
       id="mentors"
     >
       <h1 className="font-bold font-IPM text-white text-center text-6xl max-md:text-4xl">
         Our Mentors
       </h1>
       <Swiper
+        breakpoints={{
+          320: { slidesPerView: 1 },
+          480: { slidesPerView: 1 },
+          800: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
         spaceBetween={20}
         centeredSlides={true}
         autoplay={{
@@ -51,8 +57,8 @@ const Mentors = () => {
         pagination={{
           clickable: true,
         }}
-        modules={[Autoplay, Pagination]}
-        className="flex w-screen pr-20 swiper"
+        modules={[Autoplay, ]}
+        className="flex w-screen pr-10 md:pr-20 swiper"
       >
         {mentorsData.map((mentor, index) => {
           return (
@@ -63,6 +69,12 @@ const Mentors = () => {
         })}
       </Swiper>
       <Swiper
+        breakpoints={{
+          320: { slidesPerView: 1 },
+          480: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
         spaceBetween={20}
         centeredSlides={true}
         autoplay={{
@@ -70,13 +82,12 @@ const Mentors = () => {
           pauseOnMouseEnter: true,
           reverseDirection: true,
         }}
-        slidesPerView={3}
         loop={true}
         pagination={{
           clickable: true,
         }}
         modules={[Autoplay, Pagination]}
-        className="flex w-screen pr-20 swiper"
+        className="flex w-screen pr-10 md:pr-20 swiper"
       >
         {mentorsData.map((mentor, index) => {
           return (
@@ -86,19 +97,19 @@ const Mentors = () => {
           );
         })}
       </Swiper>
-      <div className="absolute right-20 bottom-0 blur-[2px] max-md:hidden">
+      <div className="absolute right-20 bottom-0 md:blur-[2px] max-md:hidden">
         <img src={curve} alt="" />
       </div>
-      <div className="absolute left-0 top-32 blur-[2px]">
+      <div className="absolute left-0 top-32 md:blur-[2px]">
         <img src={curve1} alt="" />
       </div>
-      <div className="absolute left-6 bottom-0 blur-[2px] ">
+      <div className="absolute left-6 bottom-0 md:blur-[2px] ">
         <img src={curve2} alt="" />
       </div>
       <div className="absolute size-full left-0 top-16 ">
         <img src={lights} alt="" />
       </div>
-      <div className="absolute left-[calc(25%-35px)] top-[calc(50%-50px)] rounded-full animate-spin-slow size-40 bg-trasnparent border-2 border-solid border-[#293757]">
+      <div className="absolute left-[calc(25%-35px)] top-[35%] z-50 md:top-[calc(50%-50px)]  rounded-full animate-spin-slow size-40 bg-trasnparent border-2 border-solid border-[#293757]">
         <img src={pytorch} alt="" className="absolute size-1/6 mt-5" />
       </div>
       <div className="absolute right-1/4 top-2/3 opacity-50 ">

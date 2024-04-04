@@ -3,6 +3,7 @@
   opacity: 0.7;
   transition: all 1s;
 }
+
 .mentor:hover {
   fill: rgba(165, 165, 165, 0.2);
 
@@ -14,15 +15,13 @@
 }
 .mentor {
   backdrop-filter: blur(5px);
-
 }
 .swiper {
-  --swiper-pagination-bottom: 17%;
+  --swiper-pagination-bottom: 200px;
   --swiper-pagination-top: auto;
 }
 .swiper-slide-active {
   /* opacity: 1; */
   transition: all 0.3s;
   translate: 0 -5%;
-  
 }
