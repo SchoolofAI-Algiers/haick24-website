@@ -110,7 +110,7 @@ const Mentors = () => {
       <div className="absolute size-full left-0 top-16 ">
         <img src={lights} alt="" />
       </div>
-      <div className="absolute left-[calc(25%-35px)] top-[35%] z-50 md:top-[calc(50%-50px)]  rounded-full animate-spin-slow size-40 bg-trasnparent border-2 border-solid border-[#293757]">
+      <div className="absolute left-[calc(25%-35px)] top-[35%] z-50 md:top-[calc(50%-50px)]  rounded-full animate-spin size-40 bg-trasnparent border-2 border-solid border-[#293757]">
         <img src={pytorch} alt="" className="absolute size-1/6 mt-5" />
       </div>
       <div className="absolute right-1/4 top-2/3 opacity-50 ">

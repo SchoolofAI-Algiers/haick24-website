@@ -3,6 +3,7 @@ import Agenda from './components/agenda/agenda.jsx';
 import Sponsors from './sponsor/PhotoSlider.jsx';
 import Faq from './faq/Faq.jsx';
 import Mentors from './components/mentors/Mentors.jsx';
+import Footer from './components/footer/Footer.jsx';
 const App = () => {
   return (
     <div className='overflow-hidden'>
@@ -11,6 +12,7 @@ const App = () => {
       <Mentors />
       <Sponsors />
       <Faq />
+      <Footer />
     </div>
   );
 };
