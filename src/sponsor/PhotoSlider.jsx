@@ -25,7 +25,7 @@ const Sponsors = () => {
   ];
 
   return (
-    <div className="  w-full bg-skyBlueColor pb-20 text-white relative ">
+    <div id='sponsors' className="w-full bg-skyBlueColor pb-20 text-white relative ">
       <img src={right} alt="" className="absolute  -top-32 left-0   z-[10]" />
       <img src={left} alt="" className="absolute  -top-32 right-0   z-[10]" />
 

@@ -9,11 +9,11 @@ import tweetPng from "../../assets/tweet.png"
 import ytbPng from "../../assets/ytb.png"
 const Footer = () => {
   return (
-    <footer className='relative px-6 md:px-10 xl:px-20 py-10 bg-skyBlueColor flex flex-col xl:flex-row items-center justify-between'>
+    <footer id="Contacts" className='relative py-10 bg-skyBlueColor flex flex-col xl:flex-row items-center justify-around w-full'>
             <div className='w-[410px]'>
                 <img src={haick_footer} className="w-[100%]" />
             </div>
-            <div className="w-1/2 flex flex-col gap-5 justify-center items-center font-IPM py-6">
+            <div className="max-w-md w-full flex flex-col gap-5 justify-center items-center font-IPM py-6 px-9">
                     
             {/* contact section */}
                     <div className="flex flex-col items-center gap-4">
@@ -46,7 +46,7 @@ const Footer = () => {
 
                     
             </div>
-            <p className="text-lg text-white z-20 absolute bottom-0 left-[50%] -translate-x-[50%] my-4">© 2024 School of AI - Algiers. All rights reserved.</p>
+            <p className="text-lg text-white absolute bottom-0 w-full mx-auto text-center my-4">© 2024 School of AI - Algiers. All rights reserved.</p>
     </footer>
   )
 }

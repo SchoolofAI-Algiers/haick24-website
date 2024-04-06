@@ -34,7 +34,7 @@ const agendaItems = [
 
 const Agenda = () => {
     return (
-      <div className="bg-skyBlueColor min-h-screen flex flex-col items-center pb-10 relative">
+      <div id='Agenda' className="bg-skyBlueColor min-h-screen flex flex-col items-center pb-10 relative">
 
         <div className='absolute h-64 w-64 rounded-full bg-midNightBlueColor blur-[160px] top-0 left-72' />
         <img src={leftsphere} alt="" className='absolute bottom-40 left-0 w-auto h-auto' />

@@ -4,10 +4,12 @@ import Sponsors from './sponsor/PhotoSlider.jsx';
 import Faq from './faq/Faq.jsx';
 import Mentors from './components/mentors/Mentors.jsx';
 import Footer from './components/footer/Footer.jsx';
+import About from './components/about_us/About.jsx';
 const App = () => {
   return (
     <div className='overflow-hidden'>
       <Hero />
+      <About />
       <Agenda />
       <Mentors />
       <Sponsors />

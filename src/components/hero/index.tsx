@@ -19,7 +19,7 @@ import './style.css';
 
 const Hero: React.FC = () => {
   return (
-    <div className="bg-skyBlueColor font-IPM relative flex flex-col items-center w-full min-h-screen overflow-hidden gap-4 text-white py-6">
+    <div className="Home bg-skyBlueColor font-IPM relative flex flex-col items-center w-full min-h-screen gap-4 text-white py-6">
       <Navbar />
       <Landing />
       
@@ -54,8 +54,8 @@ const Navbar: React.FC = () => {
       </div>
 
       <ul className="sm:flex items-center justify-center hidden w-full gap-6">
-        {navbarElement.map((element, index) => (
-          <li className="font-semibold text-xl font-IPM" key={index}>
+        {navbarElements.map((element, index) => (
+          <li className="font-semibold text-xl font-IPM"  key={index}>
             <a href={`#${element}`}>{element}</a>
           </li>
         ))}
@@ -70,8 +70,8 @@ const Navbar: React.FC = () => {
       {open && (
         <ul className="sm:hidden bg-midNightBlueColor py-4 rounded-l-lg fixed top-0 h-full z-20 right-0 flex flex-col items-center justify-center w-1/2 gap-4 transition ease-in-out">
           <MdClose size={20} className='absolute top-4 right-4' onClick={()=>setOpen(false)} />
-          {navbarElement.map((element, index) => (
-            <li className="font-semibold text-xl font-IPM hover:text-skyBlueColor">
+          {navbarElements.map((element, index) => (
+            <li className="font-semibold text-xl font-IPM hover:text-skyBlueColor" onClick={()=>setOpen(false)}>
               <a href={`#${element}`} key={index}>
                 {element}
               </a>
@@ -150,7 +150,7 @@ function calcTimeRemaining(): IRemainingTime {
   const seconds = Math.floor((diff % (1000 * 60)) / 1000);
   return { days, hours, minutes, seconds };
 }
-const navbarElement: string[] = [
+const navbarElements: string[] = [
   'Home',
   'About',
   'Agenda',

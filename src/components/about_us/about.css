@@ -1,0 +1,27 @@
+.box1{
+    @apply relative flex flex-col justify-center items-center lg:flex-row bg-white rounded-2xl shadow-xl bottom-8 shadow-white px-6 py-6;
+}
+.box1::after{
+    content: "";
+    background: url("../agenda/resources/blueline.svg") no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    right: -140px;
+}
+
+
+.box2{
+    @apply relative justify-center items-center flex flex-col-reverse lg:flex-row bg-white gap-4 py-[20px] rounded-2xl shadow-xl shadow-white my-6;
+}
+
+.box2::after{
+    content: "";
+    background: url("../agenda/resources/blueline.svg") no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    right: -140px;
+}
