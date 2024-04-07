@@ -37,7 +37,7 @@ const Mentors = () => {
       className="bg-skyBlueColor w-full px-5 md:px-10 py-10 gap-y-10 flex flex-col overflow-hidden relative"
       id="mentors"
     >
-      <h1 className="font-bold font-IPM text-white text-center text-6xl max-md:text-4xl">
+      <h1 className="font-bold font-IPM text-white text-center text-6xl max-md:text-4xl mt-8 lg:mt-0">
         Our Mentors
       </h1>
       <Swiper

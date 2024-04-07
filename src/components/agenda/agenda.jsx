@@ -4,7 +4,6 @@ import longgreenline from './resources/longgreenline.svg';
 import shortgreenline from './resources/shortgreenline.svg';
 import leftsphere from './resources/leftsphere.svg';
 import rightsphere from './resources/rightsphere.svg';
-import topsphere from './resources/topsphere.svg';
 import leftblueline from './resources/Curve.svg';
 import leftlonggreenline from './resources/leftlongdarkgreen.svg';
 import shortdarkgreenline from './resources/shortdarkgreen.svg';

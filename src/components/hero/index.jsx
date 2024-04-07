@@ -12,12 +12,11 @@ import { IoMdMenu } from 'react-icons/io';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { CiLocationOn } from 'react-icons/ci';
 import { TbCalendarTime } from 'react-icons/tb';
-import { IRemainingTime } from '../../types';
 import { useEffect } from 'react';
 import { MdClose } from "react-icons/md";
 import './style.css';
 
-const Hero: React.FC = () => {
+const Hero = () => {
   return (
     <div className="Home bg-skyBlueColor font-IPM relative flex flex-col items-center w-full min-h-screen gap-4 text-white py-6">
       <Navbar />
@@ -44,8 +43,8 @@ const Hero: React.FC = () => {
     </div>
   );
 };
-const Navbar: React.FC = () => {
-  const [open, setOpen] = useState<boolean>(false);
+const Navbar= () => {
+  const [open, setOpen] = useState(false);
   //const [activeTab, setActiveTab] = useState<string>("");
   return (
     <div className="sm:justify-center sm:px-20 relative z-10 flex items-center justify-between w-full h-16 gap-4 px-4 py-6">
@@ -83,7 +82,7 @@ const Navbar: React.FC = () => {
   );
 };
 
-const Landing: React.FC = () => {
+const Landing= () => {
   return (
     <div className="h-fit sm:h-full sm:z-10 flex flex-col items-center w-full gap-4 pt-44 pb-20">
       <HaickLogo className="w-1/3" />
@@ -118,8 +117,8 @@ const Landing: React.FC = () => {
   );
 };
 
-const TimeRemaining: React.FC = () => {
-  const [time, setTime] = useState<IRemainingTime>(calcTimeRemaining());
+const TimeRemaining = () => {
+  const [time, setTime] = useState(calcTimeRemaining());
   useEffect(() => {
     const interval = setInterval(() => {
       setTime(calcTimeRemaining());
@@ -128,7 +127,7 @@ const TimeRemaining: React.FC = () => {
   }, []);
   return (
     <div className="w-fit sm:right-[5%] sm:bottom-[5%] sm:absolute flex items-center justify-evenly gap-2 bg-[#080F1A] bg-opacity-40 p-2 rounded-xl shadow-lg backdrop-blur">
-      {Object.keys(time).map((key: string) => (
+      {Object.keys(time).map((key) => (
         <div
           key={key}
           className=" flex flex-col items-center justify-center  rounded-full bg-[#080F1A] p-2 w-20 h-20"
@@ -140,7 +139,7 @@ const TimeRemaining: React.FC = () => {
     </div>
   );
 };
-function calcTimeRemaining(): IRemainingTime {
+function calcTimeRemaining() {
   const currentDate = new Date();
   const eventDate = new Date('2024-04-25');
   const diff = eventDate.getTime() - currentDate.getTime();
@@ -150,7 +149,7 @@ function calcTimeRemaining(): IRemainingTime {
   const seconds = Math.floor((diff % (1000 * 60)) / 1000);
   return { days, hours, minutes, seconds };
 }
-const navbarElements: string[] = [
+const navbarElements= [
   'Home',
   'About',
   'Agenda',
