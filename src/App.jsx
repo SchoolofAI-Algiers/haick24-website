@@ -1,8 +1,9 @@
+import PreviousEdition from "./components/prev-edition"
 
 const App = () => {
   return (
     <div>
-      <h1 className=" text-MintGreen font-IPM"></h1>
+      <PreviousEdition />
     </div>
   )
 }
