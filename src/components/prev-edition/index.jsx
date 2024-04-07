@@ -2,11 +2,10 @@ import React from "react";
 import './style.css';
 import HaickEditionContainer from "./edition_container/haick_edition_container";
 import { haick23Logo, haick23Edition, haick22Logo, haick22Edition } from "./data/images";
-import LeftCurve from './assets/ui/left_curve.png';
-import RightCurve from './assets/ui/right_curve.png';
-import MidCurve from './assets/ui/mid_curve.png';
-import BellowLeftCurve from './assets/ui/bellow_left_curve.png';
-import AboveRightCurve from './assets/ui/above_right_curve.png';
+import LeftCurve from '../../assets/ui/left_curve.png';
+import RightCurve from '../../assets/ui/right_curve.png';
+import BellowLeftCurve from '../../assets/ui/bellow_left_curve.png';
+import AboveRightCurve from '../../assets/ui/above_right_curve.png';
 
 const PreviousEdition = () => {
     return (
