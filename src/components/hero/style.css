@@ -30,6 +30,7 @@ ul li:hover::after{
 .title{
     position: relative;
 }
+/*
 .title::after{
     content: "";
     z-index: 0;
@@ -40,7 +41,7 @@ ul li:hover::after{
     width: 3px;
     background:  linear-gradient(#2EA043, #0D1117);
 }
-
+*/
 
 @keyframes animateRow {
     from{

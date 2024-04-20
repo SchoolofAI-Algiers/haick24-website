@@ -22,7 +22,7 @@ const Hero = () => {
       <Navbar />
       <Landing />
       
-      <div className="w-fit md:left-[10%] md:bottom-[5%] md:absolute flex flex-col items-start gap-2 z-20">
+      <div className="w-fit md:left-[10%] md:bottom-[5%] md:absolute flex flex-col items-start gap-2">
         <div className="flex items-center justify-center gap-4">
           <CiLocationOn className="text-oceanBlue w-6 h-6" />
           <span className="font-bold">ESI Algeria</span>
