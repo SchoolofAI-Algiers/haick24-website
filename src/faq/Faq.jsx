@@ -13,7 +13,7 @@ const Faq = () => {
       <h1 className=" text-6xl  font-bold text-center py-20" >FAQ</h1>
       <img src={one} alt="" className="absolute right-0 top-20 w-1/4  " />
       <img src={two} alt="" className="absolute right-0 top-40 w-1/3 " />
-      <img src={three} alt="" className="absolute left-0 w-4/5 top-96 pt-56 z-[10]"/>
+      <img src={three} alt="" className="absolute left-0 w-4/5 top-[30rem] pt-56"/>
       <img src={span} alt="" className='absolute top-96 right-0 w-auto h-auto z-[10] ' />
       <img src={pytorch2} alt=""  className='absolute animate-spin   z-[10]  h-1/4 w-1/2 right-20   sm:w-1/3 sm:h-1/3 md:w-1/4 md:h-1/3  top-80 mt-72' />
       <img src={TF} alt="" className='absolute animate-spin right-16  lg:w-1/6 lg:h-1/4 sm:w-1/4 sm:h-1/4  w-1/4 h-1/5  z-[10] top-40    ' />

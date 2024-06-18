@@ -29,7 +29,7 @@ const Hero = () => {
         </div>
         <div className="flex items-center justify-center gap-4">
           <TbCalendarTime className="text-oceanBlue w-6 h-6" />
-          <span className="font-bold">April 25-27, 2024</span>
+          <span className="font-bold">June 27-29, 2024</span>
         </div>
       </div>
       <TimeRemaining />
@@ -126,7 +126,7 @@ const TimeRemaining = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="w-fit sm:right-[5%] sm:bottom-[5%] sm:absolute flex items-center justify-evenly gap-2 bg-[#080F1A] bg-opacity-40 p-2 rounded-xl shadow-lg backdrop-blur">
+    <div className="w-fit md:right-[5%] md:bottom-[5%] md:absolute flex items-center justify-evenly gap-2 bg-[#080F1A] bg-opacity-40 p-2 rounded-xl shadow-lg backdrop-blur">
       {Object.keys(time).map((key) => (
         <div
           key={key}
@@ -141,7 +141,7 @@ const TimeRemaining = () => {
 };
 function calcTimeRemaining() {
   const currentDate = new Date();
-  const eventDate = new Date('2024-04-25');
+  const eventDate = new Date('2024-06-27');
   const diff = eventDate.getTime() - currentDate.getTime();
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
   const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
