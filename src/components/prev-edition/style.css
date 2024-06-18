@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+
+.haick-22-head,
+.haick-23-head {
+    @apply pt-[50px] relative overflow-hidden sm:overflow-visible;
+}
+
+.haick-22-container,
+.haick-23-container{
+    @apply relative;
+    @apply px-6;
+    @apply sm:w-[60%] md:w-[600px];
+    @apply sm:p-0
+}
+
+.haick-22-container {
+    @apply sm:absolute right-0 lg:-top-10;
+    @apply sm:pr-[5rem] md:pr-[6rem];
+}
+
+.haick-23-container {
+    @apply sm:pl-[5rem] md:pl-[6rem];
+}
+
+.haick-23-curve,
+.haick-22-curve {
+    @apply absolute top-0;
+    @apply w-[6rem];
+}
+
+.haick-23-curve {
+    @apply left-0;
+    @apply transform -translate-x-[4.5rem] -translate-y-1/2;
+    @apply sm:-translate-x-[1rem] md:-translate-x-[0rem];
+}
+
+.haick-22-curve {
+    @apply w-[4rem] sm:w-[5rem] md:w-[6rem];
+    @apply right-0;
+    @apply transform translate-x-[2.5rem] translate-y-1/2;
+    @apply sm:translate-x-[0rem] md:translate-x-[0rem];
+}
+
+.haick-22-left-curve {
+    @apply hidden sm:block lg:hidden absolute left-0 transform -translate-x-full;
+    @apply lg:top-[100px] w-[10000px];
+}
+
+.haick-22-left-curve-2 {
+    @apply hidden sm:block md:hidden lg:block absolute left-0;
+    @apply sm:w-[40%] lg:w-[41.7%];
+    @apply sm:top-40;
+}
+
+.haick-23-right-curve {
+    @apply absolute right-0 hidden sm:block;
+    @apply sm:w-[40%] md:w-[29%];
+    @apply sm:top-20;
+}
+
+.haick-mid-curve {
+    @apply absolute h-[3.1rem] sm:hidden;
+    @apply left-1/2 top-1/2 transform translate-x-1/2
+}
