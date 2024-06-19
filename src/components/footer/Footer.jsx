@@ -14,7 +14,7 @@ const Footer = () => {
                 <img src={haick_footer} className="w-[60%] md:w-[100%]" />
                 {/* follow section */}
                 <div className="flex flex-col gap-4 items-center">
-                  <div className="flex items-center gap-16">
+                  <div className="flex items-center gap-8 md:gap-16">
                           <a href="" target="_blank"> <img src={facebookPng} className="w-6 h-6 object-cover" /></a>
                           <a href="" target="_blank"> <img src={instaPng} className="w-6 h-6 object-cover" /></a>
                           <a href="" target="_blank"> <img src={linkedinPng} className="w-6 h-6 object-cover" /></a>
@@ -23,7 +23,7 @@ const Footer = () => {
                   </div>
                 </div>
             </div>
-            <div className="max-w-md w-full flex flex-col gap-5 justify-center items-center font-IPM py-6 px-9">
+            <div className="max-w-md w-full flex flex-col gap-5 justify-center items-center font-IPM py-20 px-9">
                     
             {/* contact section */}
                     <div className="flex flex-col items-center gap-4">
@@ -40,10 +40,14 @@ const Footer = () => {
                         <img className="w-6 h-6 object-cover" src={callSvg} />
                             <span className="text-white">+213 6 55 69 66 17</span>
                         </div>
-                    </div>
-                    
+                    </div>  
             </div>
-            <p className="text-lg text-white absolute bottom-0 w-full mx-auto text-center my-4">© 2024 School of AI - Algiers. All rights reserved.</p>
+            
+            <div className="text-lg text-white absolute bottom-0 w-full mx-auto text-center my-4">
+              <p>© 2024 School of AI - Algiers.</p>
+              <p>All rights reserved.</p>
+            </div>
+            
     </footer>
   )
 }
