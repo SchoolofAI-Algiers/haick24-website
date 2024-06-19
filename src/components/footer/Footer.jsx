@@ -15,11 +15,11 @@ const Footer = () => {
                 {/* follow section */}
                 <div className="flex flex-col gap-4 items-center">
                   <div className="flex items-center gap-8 md:gap-16">
-                          <a href="" target="_blank"> <img src={facebookPng} className="w-6 h-6 object-cover" /></a>
-                          <a href="" target="_blank"> <img src={instaPng} className="w-6 h-6 object-cover" /></a>
-                          <a href="" target="_blank"> <img src={linkedinPng} className="w-6 h-6 object-cover" /></a>
-                          <a href="" target="_blank"> <img src={tweetPng} className="w-6 h-6 object-cover" /></a>
-                          <a href="" target="_blank"> <img src={ytbPng} className="w-6 h-6 object-cover" /></a>
+                          <a href="https://www.facebook.com/SchoolofAIAlgiers" target="_blank"> <img src={facebookPng} className="w-6 h-6 object-cover" /></a>
+                          <a href="https://www.instagram.com/soai_algiers/" target="_blank"> <img src={instaPng} className="w-6 h-6 object-cover" /></a>
+                          <a href="https://www.linkedin.com/company/school-of-ai-algiers/mycompany/" target="_blank"> <img src={linkedinPng} className="w-6 h-6 object-cover" /></a>
+                          <a href="https://x.com/soaialgiers" target="_blank"> <img src={tweetPng} className="w-6 h-6 object-cover" /></a>
+                          <a href="https://www.youtube.com/@schoolofaialgiers" target="_blank"> <img src={ytbPng} className="w-6 h-6 object-cover" /></a>
                   </div>
                 </div>
             </div>
