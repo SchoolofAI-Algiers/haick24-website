@@ -40,6 +40,8 @@ const Mentors = () => {
       <h1 className="font-bold font-IPM text-white text-center text-6xl max-md:text-4xl mt-8 lg:mt-0">
         Our Mentors
       </h1>
+      <p className="absolute left-[50%] top-[50%] transform translate-x-[-50%] translate-y-[50%] font-bold text-white text-[2rem] md:text-[2.5rem] lg:text-[3rem]">COMING SOON</p>
+      <div className="blur-md opacity-50 z-10">
       <Swiper
         breakpoints={{
           320: { slidesPerView: 1 },
@@ -69,7 +71,7 @@ const Mentors = () => {
           );
         })}
       </Swiper>
-      <Swiper
+      {/* <Swiper
         breakpoints={{
           320: { slidesPerView: 1 },
           480: { slidesPerView: 1 },
@@ -97,23 +99,24 @@ const Mentors = () => {
             </SwiperSlide>
           );
         })}
-      </Swiper>
-      <div className="absolute right-20 bottom-0 md:blur-[2px] max-md:hidden">
+      </Swiper> */}
+      </div>
+      <div className="hidden absolute right-20 bottom-0 md:blur-[2px] max-md:hidden">
         <img src={curve} alt="" />
       </div>
-      <div className="absolute left-0 top-32 md:blur-[2px]">
+      <div className="hidden absolute left-0 top-32 md:blur-[2px]">
         <img src={curve1} alt="" />
       </div>
-      <div className="absolute left-6 bottom-0 md:blur-[2px] ">
+      <div className="hidden absolute left-6 bottom-0 md:blur-[2px] ">
         <img src={curve2} alt="" />
       </div>
-      <div className="absolute size-full left-0 top-16 ">
+      <div className="hidden absolute size-full left-0 top-16 ">
         <img src={lights} alt="" />
       </div>
-      <div className="absolute left-[calc(25%-35px)] top-[35%] z-50 md:top-[calc(50%-50px)]  rounded-full animate-spin size-40 bg-trasnparent border-2 border-solid border-[#293757]">
+      <div className="hidden absolute left-[calc(25%-35px)] top-[35%] z-50 md:top-[calc(50%-50px)]  rounded-full animate-spin size-40 bg-trasnparent border-2 border-solid border-[#293757]">
         <img src={pytorch} alt="" className="absolute size-1/6 mt-5" />
       </div>
-      <div className="absolute right-1/4 top-2/3 opacity-50 ">
+      <div className="hidden absolute right-1/4 top-2/3 opacity-50 ">
         <img src={glow} alt="" />
       </div>
     </div>

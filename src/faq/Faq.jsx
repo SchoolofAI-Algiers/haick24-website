@@ -9,7 +9,7 @@ import three from './logo/three.svg'
 
 const Faq = () => {
   return (
-    <section id="Faq" className="px-8  sm:px-20 lg:px-[12vw]  pb-48  flex  justify-center flex-col bg-skyBlueColor text-white font-libre-franklin relative ">
+    <section id="FAQ" className="px-8  sm:px-20 lg:px-[12vw]  pb-48  flex  justify-center flex-col bg-skyBlueColor text-white font-libre-franklin relative ">
       <h1 className=" text-6xl  font-bold text-center py-20" >FAQ</h1>
       <img src={one} alt="" className="absolute right-0 top-20 w-1/4  " />
       <img src={two} alt="" className="absolute right-0 top-40 w-1/3 " />
