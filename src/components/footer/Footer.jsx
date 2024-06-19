@@ -10,8 +10,8 @@ import ytbPng from "../../assets/ytb.png"
 const Footer = () => {
   return (
     <footer id="Contacts" className='relative py-10 bg-skyBlueColor flex flex-col xl:flex-row items-center justify-around w-full'>
-            <div className='w-[410px] flex flex-col gap-10'>
-                <img src={haick_footer} className="w-[100%]" />
+            <div className='w-[410px] flex flex-col gap-10 items-center'>
+                <img src={haick_footer} className="w-[60%] md:w-[100%]" />
                 {/* follow section */}
                 <div className="flex flex-col gap-4 items-center">
                   <div className="flex items-center gap-16">

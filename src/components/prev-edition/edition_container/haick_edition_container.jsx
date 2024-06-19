@@ -11,7 +11,7 @@ const HaickEditionContainer = ({logo , isLeft,images}) => {
             <div
                 className={`absolute top-0 ${isLeft ? 'left-0' : 'right-0'}
                     transform -translate-y-1/2 ${ isLeft ? 'translate-x-1/4' : '-translate-x-1/4'}
-                    bg-white rounded-lg h-[50px] w-[150px] flex justify-center items-center`}>
+                    bg-white rounded-lg h-[40px] w-[100px] md:h-[50px] md:w-[150px] flex justify-center items-center`}>
                         <img src={logo} className="w-[75%]" />
             </div>
         </div>
