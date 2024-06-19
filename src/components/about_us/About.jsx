@@ -19,17 +19,19 @@ const About = () => {
       </h1>
       <img src={curve1} className="absolute -left-16 top-[30%] hidden md:block" />
       <div className="box1">
-        <div className="z-30 flex flex-col gap-8">
+        <div className="z-30 flex flex-col gap-8 lg:w-[75%] ">
           <h1 className="text-midNightBlueColor text-center text-lg md:text-3xl lg:text-4xl lg:text-left font-IPM font-bold">
             What is SOAI ?
           </h1>
-          <p className="text-lg lg:text-2xl font-WorkSans text-center md:text-left text-white">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.{' '}
+          <p className="text-lg lg:text-2xl font-WorkSans text-justify text-white">
+          School of AI Algiers is a scientific club established in 2018 at the Higher National School of Computer Science (ESI Algiers). 
+          The club unites young, motivated AI enthusiasts to help them unlock their potential and enhance their skills in the field of artificial intelligence. 
+          To achieve this, the club organizes a range of events, including Haick, a datathon where participants address AI and data science challenges. 
+          Additionally, the club hosts international conferences such as AiSummit and Indaba, alongside internal events designed specifically for its members.
+          {' '}
           </p>
         </div>
-        <SoaiLogo className="mx-10 pt-4 sm:w-[30%] md:w-[75%] md:pt-8 lg:w-[60%] w-[50%] h-auto"  />
+        <SoaiLogo className="mx-10 pt-4 sm:w-[30%] md:w-[75%] md:pt-8 lg:w-[50%] lg:px-[50px] w-[50%] h-auto"  />
         <img
           src={Lines}
           alt=""
@@ -38,15 +40,17 @@ const About = () => {
       </div>
       <img src={curve1} className="absolute hidden md:block -left-16 top-[66%]" />
       <div className="box2 ">
-      <HaickLogo className="z-0 relative sm:w-[30%] md:w-[75%] md:pt-8 lg:w-[60%] w-[50%] h-auto px-2 md:px-8" />
-        <div className="z-30 flex flex-col gap-8">
+      <HaickLogo className="mx-10 pt-4 sm:w-[30%] md:w-[75%] md:pt-8 lg:w-[50%] lg:px-[50px] w-[50%] h-auto" />
+        <div className="z-30 flex flex-col gap-8 lg:w-[75%]">
           <h1 className="px-4 text-midNightBlueColor text-center font-IPM text-lg md:text-2xl lg:text-4xl font-bold">
             What is HAICK ?
           </h1>
-          <p className="px-4 md:px-8 text-lg lg:text-2xl font-WorkSans text-center lg:text-left mx-1 md:mx-4 text-white">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.{' '}
+          <p className="px-4 md:px-8 text-lg lg:text-2xl font-WorkSans text-center text-justify mx-1 md:mx-4 text-white">
+          HAICK, an event organized by the School of AI Algiers (SOAI), is a notable datathon in Algeria. 
+          It brings together local companies and researchers who present real-world problems along with relevant data, 
+          inviting Algerian data scientists and AI enthusiasts to develop and compete with their solutions. 
+          The first HAICK event was held in 2022, followed by a second edition in 2023, which included a series of workshops.
+          {' '}
           </p>
         </div>
       </div>
