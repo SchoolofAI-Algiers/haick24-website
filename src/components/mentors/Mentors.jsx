@@ -25,7 +25,7 @@ const Mentor = ({ name, desc, img }) => {
         </p>
       </div>
       <div className="absolute w-40 h-40 top-0 left-[50%] -translate-x-[50%] -translate-y-[40%] size-1/2">
-          <img src={img} alt="" className="" />
+          <img src={img} alt="" className="rounded-full" />
         </div>
     </div>
   );
