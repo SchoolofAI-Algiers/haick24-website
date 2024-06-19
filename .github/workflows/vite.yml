@@ -30,6 +30,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Install Package-lock
+        run: npm install
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
