@@ -22,13 +22,43 @@ const commonStyles = {
   agendaItemDate: 'font-WorkSans text-right mr-2 mb-2 md:mb-5 text-white',
 };
 
-const agendaItems = [
-  { time: '00:00-07:00', text: 'Hacking' },
-  { time: '07:00-07:30', text: 'Breakfast' },
-  { time: '07:30-13:00', text: 'Hacking' },
-  { time: '13:00-13:45', text: 'Lunch' },
-  { time: '13:45-19:00', text: 'Hacking' },
-];
+const day1 = [
+  { time: '17:00-18:00', text: 'Check in' },
+  { time: '18:00-19:00', text: 'Opening ceremony' },
+  { time: '19:00-19:30', text: 'challenges presentaiton' },
+  { time: '20:00-21:00', text: 'Dinner break' },
+  { time: '   21:00   ', text: 'HACKING START' },
+]
+
+const day2 = [
+  { time: '21:00-02:00', text: 'Hacking' },
+  { time: '02:00-02:15', text: 'coffee break' },
+  { time: '02:15-02:30', text: 'fun activity' },
+  { time: '02:30-07:30', text: 'Hacking' },
+  { time: '07:30-09:00', text: 'Coffee break' },
+  { time: '09:00-12:00', text: 'Hacking' },
+  { time: '12:00-12:30', text: 'Lunch break' },
+  { time: '12:30-14:00', text: 'Prayer' },
+  { time: '16:00-16:30', text: 'Coffee break' },
+  { time: '16:30-20:00', text: 'Hacking' },
+  { time: '20:00-21:00', text: 'Dinner break' },
+  { time: '21:00-00:00', text: 'Hacking' },
+]
+
+const day3 = [
+  { time: '00:00-02:00', text: 'Hacking' },
+  { time: '02:00-02:15', text: 'coffee break' },
+  { time: '02:15-02:30', text: 'fun activity' },
+  { time: '03:00-07:30', text: 'Hacking' },
+  { time: '07:30-09:00', text: 'Coffee break' },
+  { time: '09:00-12:00', text: 'Hacking' },
+  { time: '   21:00   ', text: 'SUBMITIONS' },
+  { time: '12:00-12:30', text: 'Lunch break' },
+  { time: '12:30-14:00', text: 'Prayer' },
+  { time: '13:30-14:30', text: 'Closing Cermeony' },
+]
+
+const agendaItems = [day1, day2, day3];
 
 
 const Agenda = () => {
@@ -50,24 +80,24 @@ const Agenda = () => {
           Our Agenda
         </p>
 
-        <div className="flex flex-row w-full ml-20 md:ml-56 ">
-          <div className="bg-skyBlueColor mt-10 rounded-[7px] z-[1]">
-            <div className='flex flex-col items-start bg-gray pt-5 pr-20 pb-5 pl-7 rounded-[7px] md:text-2xl md:w-[500px] md:pl-10 md:pt-10 md:pb-12'>
+        <div className="flex flex-row w-full mx-auto px-5 md:px-0 md:mr-0 md:ml-56">
+          <div className="bg-skyBlueColor w-full sm:w-fit mt-10 rounded-[7px] z-[1]">
+            <div className='flex flex-col items-start bg-gray pt-5 pb-5 pl-7 rounded-[7px] md:text-2xl md:w-[500px] md:pl-10 md:pt-10 md:pb-12'>
               <h1 className="font-IPM font-semibold text-right mr-2 mb-2 md:mb-5 text-midNightBlueColor">DAY 1</h1>
-              <p className="font-WorkSans text-right mr-2 mb-2 md:mb-5 text-white">20/04/2024</p>
-              {agendaItems.map((item) => (
+              <p className="font-WorkSans text-right mr-2 mb-2 md:mb-5 text-white">27/06/2024</p>
+              {agendaItems[0].map((item) => (
                 <AgendaItem key={item.time} time={item.time} text={item.text} />
               ))}
             </div>
           </div>
         </div>
         
-        <div className="flex flex-row w-full justify-end mr-20 md:mr-80">
-          <div className="bg-skyBlueColor mt-10 rounded-[7px] z-[1]">
-            <div className='flex flex-col items-start bg-gray pt-5 pr-20 pb-5 pl-7 rounded-[7px] md:text-2xl md:w-[500px] md:pl-10 md:pt-10 md:pb-12'>
-              <h1 className="font-IPM font-semibold text-right mr-2 mb-2 md:mb-5 text-midNightBlueColor">DAY 1</h1>
-              <p className="font-WorkSans text-right mr-2 mb-2 md:mb-5 text-white">20/04/2024</p>
-              {agendaItems.map((item) => (
+        <div className="flex flex-row w-full sm:justify-end px-5 mx-auto md:ml-0 md:px-0 md:mr-56">
+          <div className="bg-skyBlueColor w-full sm:w-fit mt-10 rounded-[7px] z-[1]">
+            <div className='flex flex-col items-start bg-gray pt-5 pb-5 pl-7 rounded-[7px] md:text-2xl md:w-[500px] md:pl-10 md:pt-10 md:pb-12'>
+              <h1 className="font-IPM font-semibold text-right mr-2 mb-2 md:mb-5 text-midNightBlueColor">DAY 2</h1>
+              <p className="font-WorkSans text-right mr-2 mb-2 md:mb-5 text-white">28/06/2024</p>
+              {agendaItems[1].map((item) => (
                 <AgendaItem key={item.time} time={item.time} text={item.text} />
               ))}
             </div>
@@ -75,12 +105,12 @@ const Agenda = () => {
         </div>
         
 
-        <div className="flex flex-row w-full ml-20 md:ml-80">
-          <div className="bg-skyBlueColor mt-10 rounded-[7px] z-[1]">
-            <div className='flex flex-col items-start bg-gray pt-5 pr-20 pb-5 pl-7 rounded-[7px] md:text-2xl md:w-[500px] md:pl-10 md:pt-10 md:pb-12'>
-              <h1 className="font-IPM font-semibold text-right mr-2 mb-2 md:mb-5 text-midNightBlueColor">DAY 1</h1>
-              <p className="font-WorkSans text-right mr-2 mb-2 md:mb-5 text-white">20/04/2024</p>
-              {agendaItems.map((item) => (
+        <div className="flex flex-row w-full mx-auto px-5 md:px-0 md:mr-0 md:ml-56">
+          <div className="bg-skyBlueColor w-full sm:w-fit mt-10 rounded-[7px] z-[1]">
+            <div className='flex flex-col items-start bg-gray pt-5 pb-5 pl-7 rounded-[7px] md:text-2xl md:w-[500px] md:pl-10 md:pt-10 md:pb-12'>
+              <h1 className="font-IPM font-semibold text-right mr-2 mb-2 md:mb-5 text-midNightBlueColor">DAY 3</h1>
+              <p className="font-WorkSans text-right mr-2 mb-2 md:mb-5 text-white">29/06/2024</p>
+              {agendaItems[2].map((item) => (
                 <AgendaItem key={item.time} time={item.time} text={item.text} />
               ))}
             </div>
