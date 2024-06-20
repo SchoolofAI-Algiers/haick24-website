@@ -59,9 +59,9 @@ const Navbar= () => {
           </li>
         ))}
       </ul>
-      <button className="bg-oceanBlue sm:flex hidden px-4 py-2 font-bold rounded-full">
+      <a href="https://schoolofai-algiers.github.io/haick24-reg-form/" className="bg-oceanBlue sm:flex hidden px-4 py-2 font-bold rounded-full">
         Register
-      </button>
+      </a>
      {!open &&  <IoMdMenu
         onClick={() => setOpen((prv) => !prv)}
         className="sm:hidden flex items-center justify-center w-8 h-8 cursor-pointer"
