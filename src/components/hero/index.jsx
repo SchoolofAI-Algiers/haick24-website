@@ -89,7 +89,7 @@ const Landing= () => {
       <h1 className="title font-WorkSans text-4xl font-semibold">
         is officially here !
       </h1>
-      <button
+      <a href='https://schoolofai-algiers.github.io/haick24-reg-form/'
         className="bg-oceanBlue px-7 py-2 text-[#000] rounded-full font-semibold hover:justify-center transition-all overflow-hidden"
       >
         {/*
@@ -111,7 +111,7 @@ const Landing= () => {
           className={'animateRow transition-all delay-300 ease-in-out'}
         />
          </span>
-      </button>
+      </a>
       
     </div>
   );
