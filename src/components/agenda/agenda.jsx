@@ -50,12 +50,11 @@ const day3 = [
   { time: '02:00-02:15', text: 'coffee break' },
   { time: '02:15-02:30', text: 'fun activity' },
   { time: '03:00-07:30', text: 'Hacking' },
-  { time: '07:30-09:00', text: 'Coffee break' },
-  { time: '09:00-12:00', text: 'Hacking' },
-  { time: '   21:00   ', text: 'SUBMITIONS' },
-  { time: '12:00-12:30', text: 'Lunch break' },
-  { time: '12:30-14:00', text: 'Prayer' },
-  { time: '13:30-14:30', text: 'Closing Cermeony' },
+  { time: '07:30-08:00', text: 'Coffee break' },
+  { time: '08:30-10:00', text: 'Hacking' },
+  { time: '   10:00   ', text: 'SUBMITIONS' },
+  { time: '10:00-11:00', text: 'Coffee break' },
+  { time: '11:00-12:00', text: 'Closing Cermeony' },
 ]
 
 const agendaItems = [day1, day2, day3];
