@@ -30,7 +30,8 @@ const Sponsors = () => {
       <img src={left} alt="" className="absolute  -top-32 right-0   z-[10]" />
 
       <h1 className=" text-6xl  font-bold text-center py-20">Our Sponsors</h1>
-      <div className="flex justify-center">
+       <p className="absolute left-[50%] top-[50%] transform translate-x-[-50%] translate-y-[50%] font-bold text-white text-[2rem] md:text-[2.5rem] lg:text-[3rem]">COMING SOON</p>
+      <div className="flex justify-center blur-md opacity-50">
         <div
           className="md:w-3/4 mx-auto sm:w-4/5 lg:w-3/4 w-4/5 inline-flex flex-nowrap overflow-hidden "
           style={{
