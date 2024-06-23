@@ -18,12 +18,12 @@ export const faq = [
   {
     question: "How can I participate?",
     answer:
-      "After forming your team, the team leader is asked to fill out the form on our website with all the information of their team. If accepted, we'll notify you in time.",
+      "After forming your team, all team members need to register by filling the form on our website. If accepted, we'll notify you in time.",
   },
   {
     question: "Where and When?",
     answer:
-      "Details about the location and date will be provided soon.",
+      "From june 27th to 29th at ESI Algiers.",
   },
   {
     question: "What are the prizes?",
