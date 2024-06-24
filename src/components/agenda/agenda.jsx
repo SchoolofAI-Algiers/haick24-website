@@ -39,6 +39,7 @@ const day2 = [
   { time: '09:00-12:00', text: 'Hacking' },
   { time: '12:00-12:30', text: 'Lunch break' },
   { time: '12:30-14:00', text: 'Prayer' },
+  { time: '14:00-16:00', text: 'Hacking' },
   { time: '16:00-16:30', text: 'Coffee break' },
   { time: '16:30-20:00', text: 'Hacking' },
   { time: '20:00-21:00', text: 'Dinner break' },
